@@ -11,21 +11,10 @@ private:
     void warning( void );
     void error( void );
 public:
-    void complain( std::string level )
-    {
-        (*this.*level)();
-    }
+    void complain( std::string level );
     Harl(/* args */);
     ~Harl();
 };
-
-Harl::Harl(/* args */)
-{
-}
-
-Harl::~Harl()
-{
-}
 
 
 #endif
